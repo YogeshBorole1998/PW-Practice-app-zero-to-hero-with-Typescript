@@ -1,0 +1,25 @@
+1. To Run case on particular browser => npx playwright test filename.spec.ts --project=chromium
+
+2. To create a test data using faker : 
+
+npm i @faker-js/faker --save-dev --force
+https://www.npmjs.com/package/@faker-js/faker
+
+3. Retry : test.describe.configure({ retries: 2 })
+
+4. Test Tags: 
+npx playwright test --project=chromium --grep @smoke
+npx playwright test --project=chromium --grep "@smoke|@regression"
+
+5. Playwright Built in Reporter : html, list, dot, json, etc.
+['json', {outputFile: 'test-results/jsonReport.json'}]
+
+6. Allure Report : 
+npm install -D allure-playwright
+Add ['allure-playwright'] in configuration file
+Run on CMD : allure generate allure-results -o allure-report -clean
+
+7. eyes.applitool : 
+https://applitools.com/tutorials/playwright
+
+ 
