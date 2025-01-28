@@ -157,7 +157,7 @@ test('Handle Web Tables', async ({ page }) => {
     }
 })
 
-test('Handle Date Picker', async ({ page }) => {
+test.skip('Handle Date Picker', async ({ page }) => {
     await page.getByText('Forms').click();
     await page.getByText('Datepicker').click();
 

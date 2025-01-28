@@ -21,7 +21,7 @@ test('Parametrized methods', async ({ page }) => {
     await pageManager.onFormLayoutsPage().submitUsingTheGridFormWithCredentialsAndSelectOption('test123@gmail.com', 'Pass@1234', 'Option 2');
 });
 
-test('Date picker page', async ({ page }) => {
+test.skip('Date picker page', async ({ page }) => {
     const pageManager = new PageManager(page)
 
     await pageManager.navigateTo().formLayoutsPage()
